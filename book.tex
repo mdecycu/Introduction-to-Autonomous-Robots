@@ -126,7 +126,9 @@
 % fixing a scrbook error when compiling the citations
 \DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf}
 
-\DeclareUnicodeCharacter{00A0}{ }
+% KMOLab correction
+%\DeclareUnicodeCharacter{00A0}{ }
+\newcommand{\nobreakspace}{\nobreak\space}
 
 %%% HEADERS & FOOTERS
 %\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
