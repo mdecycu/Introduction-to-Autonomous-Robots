@@ -18,7 +18,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4.1.1
       - name: Install texlive and related fonts
-        run:
+        run: |
+          sudo apt-get upgrade --fix-missing
           sudo apt install -y texlive-full texlive-xetex texlive-lang-chinese gsfonts fonts-moe-standard-kai ttf-mscorefonts-installer librsvg2-bin texlive-fonts-extra 
       - name: Test LaTeX
         working-directory: ./
